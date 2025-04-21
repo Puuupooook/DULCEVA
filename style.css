@@ -1,0 +1,442 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.header {
+    font-size: 24px;
+}
+
+.header .last-word {
+    font-size: 30px;
+}
+
+/* начало головы */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    border: 1vh;
+    background: linear-gradient(180deg, #87cefa, #1e90ff);
+}
+
+
+.box1 {
+    padding: 3vh 7vh 7vh;
+    color: white;
+    align-items: center;
+    width: 57vh;
+    border: 2vh;
+   
+}
+
+.box1 img {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 h1 {
+    margin-top: 10vh;
+}
+
+.box2 {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    width: 80vh;
+    border: 2vh;
+}
+
+.box2 img {
+    max-width: 100%;
+    height: auto;
+}
+.box1 button {
+    background-color: #ffd900;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* анимация кнопки */
+.button {
+    transition: background-color 0.2s; 
+    
+    transition: transform 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(255, 174, 0);
+    transform: scale(1.2);
+}
+/* конец анимации кнопки */
+
+/* конец головы */
+
+/* начало тела 1 */
+.services {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin: 3vh;
+}
+
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-block {
+    text-align: center;
+    justify-content: center;
+    padding: 0vh 6.5vh 6vh;
+}
+
+.service-block img {
+    width: 50px;
+    margin-bottom: 10px;
+    margin: 3vh;
+}
+
+/* анимация иконки 2 */
+.animate {
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+}
+
+.animate:hover {
+    transform: rotate(360deg);
+}
+
+/* конец анимации иконки 2 */
+
+/* анимация иконки 3 */
+.bouncer {
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s ease-in-out 2;
+  }
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/* конец анимации иконки 3 */
+
+/* анимация текста */
+.mover {
+    position: relative;
+    animation: zigzag 4s ease-in-out infinite;
+    animation-iteration-count: 1
+  }
+  
+  @keyframes zigzag {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(100px) translateY(-50px);
+    }
+    50% {
+      transform: translateX(200px) translateY(50px);
+    }
+    75% {
+      transform: translateX(100px) translateY(-50px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+/* конец анимации текста */
+
+/* конец тела 1 */
+
+/* начало тела 2 */
+.callback-form {
+    background-color: #e6f8ff;
+    padding: 40px 0;
+}
+
+.callback-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.callback-form form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.callback-form input,
+.callback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.callback-form button {
+    background-color: #ffd900;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* конец тела 2 */
+
+/* начало тела 3 */
+.callback-form1 {
+    background-color: #99a4a8;
+    padding: 40px 0;
+}
+
+.callback-form1 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.callback-form1 form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.callback-form1 input,
+.callback-form1 textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.callback-form1 button {
+    background-color: #ffd900;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.result {
+    margin: 30px auto;
+    text-align: left;
+    padding: 15px;
+    background-color: #85b8e2;
+    max-width: 400px;
+}
+
+.result h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* конец тела 3 */
+
+/* начало подвала */
+footer {
+    background: linear-gradient(180deg, #5690b4, #1a64ad);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* конец подвала */
+
+/* оптимизация */
+/* экран 1200 */
+@media (max-width:1200) {
+    .header-container {
+       width: 80%;
+    }
+    
+}
+/* экран 992 */
+@media (max-width: 992px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        justify-content: center; 
+    }
+
+    .service-block {
+        padding: 0vh 4vh 4vh; 
+    }
+
+    .service-block:nth-child(3) {
+        grid-column: span 2; 
+        justify-self: center; 
+        max-width: 60%; 
+    }
+    
+
+    .service-block p {
+        font-size: 18px; 
+        line-height: 1.4; 
+        max-width: 100%;
+        white-space: normal; 
+    }
+
+    .callback-form form {
+        width: 80%; 
+    }
+
+    .box1 {
+        width: 70vh; 
+        padding: 4vh 8vh 8vh; 
+    }
+
+    .box1 h1 {
+        font-size: 36px; 
+    }
+
+    .box1 p {
+        font-size: 18px; 
+    }
+
+    .box1 button {
+        padding: 12px 25px; 
+    }
+    
+
+    .box2 {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px; 
+        padding: 4vh 6vh; 
+    }
+
+    .box2 img {
+        max-width: 350px; 
+        height: auto; 
+    }
+
+    .box2 p {
+        font-size: 18px; 
+        line-height: 1.5;
+    }
+
+    .header .last-word {
+        font-size: 42px !important; 
+    }
+}
+
+/* экран 768 */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+
+    .box1, .box2 {
+        width: 100%;
+        padding: 5vh;
+    }
+
+    .box1 {
+        order: 1; 
+    }
+    .box1 button {
+        padding: 15px 35px;      
+        font-size: 18px;          
+    }
+
+    .box2 {
+        order: 2; 
+    }
+
+    .box2 img {
+        max-width: 500px; 
+        height: auto;
+    }
+
+    .services-grid {
+        display: block; 
+        gap: 15px; 
+    }
+
+    .service-block {
+        width: 100%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-block img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .service-block p {
+        font-size: 18px; 
+        line-height: 1.4; 
+        max-width: 90%; 
+        white-space: normal; 
+        text-align: center; 
+        white-space: nowrap;
+    }
+
+    .service-block:nth-child(3) {
+        grid-column: auto;   
+        justify-self: auto;  
+        max-width: 100%;     
+    }
+    
+  
+    .callback-form form {
+        width: 90%; 
+        padding: 0 20px;
+    }
+
+    .callback-form button {
+        padding: 15px 35px;      
+        font-size: 18px;          
+    }
+
+    .header .last-word {
+        font-size: 42px !important; 
+    }
+}
+

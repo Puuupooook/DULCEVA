@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+                <!-- анимация для лого при помощи библиотеки -->
+            <div class="box1">
+                <img src="logo.png" alt="logo" class="title animate__animated animate__flipInX">
+                <h1 class="header">С помощью нас
+                    вы сможете создать то, о чём
+                    <span class="last-word"> <br>желаете!</span>
+                </h1>
+
+                <p>Наши возможности + опыт позволят Вам достичь огромных успехов. Мы верим в вас! И знаем это на все
+                    100%.
+                    Вас не остановить!</p>
+                 <!-- анимация кнопки  -->
+                <button class="button">Узнать больше...</button>
+            </div>
+
+            <div class="box2">
+                <img src="header-img.png" alt="phone">
+            </div>
+
+        </div>
+    </header>
+
+    <section class="services">
+
+        <div class="container">
+            <!-- анимация текста -->
+            <h2 class="mover">Что Вам необходимо?</h2>
+
+            <div class="services-grid">
+
+                <div class="service-block">
+
+                    <!-- анимация иконки 1 при помощи библиотеки -->
+                    <img src="f3.png" alt="Иконка 1" class="title animate__animated animate__rubberBand">
+                    <h3>Первый блок</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+                </div>
+
+                <!-- анимация иконки 2  -->
+                <div class="service-block">
+                    <img src="f4.png" alt="Иконка 2" class="animate">
+                    <h3>Второй блок</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+                </div>
+
+                <!-- анимация иконки 3 -->
+                <div class="service-block">
+                    <img src="f5.png" alt="Иконка 3" class="bouncer">
+                    <h3>Третий блок</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="callback-form1" >
+        <div class="container">
+            <h2>Форма заказа продукта</h2>
+            <form id="productForm" novalidate>
+    
+                <label for="firstName"></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Имя">
+    
+                <label for="lastName"></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Фамилия">
+    
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон">
+    
+                <label for="date"></label>
+                <input type="date" id="date" name="date">
+    
+                <label for="time"></label>
+                <input type="time" id="time" name="time">
+    
+                <div id="errorMessages" class="error-message"></div>
+    
+                <button type="submit">Отправить форму</button>
+            </form>
+    
+            <div id="formResult" class="result" style="display: none;"></div>
+
+        </div>
+    </section>
+
+    <section class="callback-form" id="formTitle">
+        <div class="container">
+            <h2>Форма заказа обратного звонка</h2>
+            <form>
+
+                <label for="text"></label>
+                <input type="text" id="text" name="name" placeholder="Имя">
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Введите свой E-mail" required>
+
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+
+                <label for="messege"></label>
+                <textarea name="messege" id="messege" placeholder="Какая тема Вас интересует?"></textarea>
+
+                <button>Отправить форму</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© Все права на этом сайте защищены</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
