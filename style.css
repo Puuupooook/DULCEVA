@@ -319,6 +319,10 @@ footer {
         width: 80%; 
     }
 
+    .callback-form1 form {
+        width: 80%; 
+    }
+
     .box1 {
         width: 70vh; 
         padding: 4vh 8vh 8vh; 
@@ -431,6 +435,16 @@ footer {
     }
 
     .callback-form button {
+        padding: 15px 35px;      
+        font-size: 18px;          
+    }
+
+    .callback-form1 form {
+        width: 90%; 
+        padding: 0 20px;
+    }
+
+    .callback-form1 button {
         padding: 15px 35px;      
         font-size: 18px;          
     }
